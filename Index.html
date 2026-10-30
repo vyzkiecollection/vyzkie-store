@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f8eef0">
+  <meta name="description" content="VYZKIE — Hijab Your Style. Elegant, modest, everyday.">
+  <title>VYZKIE — Hijab Your Style</title>
+  <style>
+    :root{--blush:#f8eef0;--pink:#f1dfe4;--rose:#986777;--rose-dark:#805463;--ink:#382b30;--muted:#806f75;--cream:#fffaf7;--line:#eadde0;--white:#fff}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Arial,Helvetica,sans-serif}
+    a{color:inherit}
+    .site-header{background:linear-gradient(135deg,#f8eef0 0%,#fffaf7 100%);text-align:center;padding:25px 18px 21px;border-bottom:1px solid var(--line)}
+    .brand{font:normal clamp(38px,9vw,54px)/1 Georgia,'Times New Roman',serif;letter-spacing:.17em;color:var(--rose-dark);margin:0 0 11px;padding-left:.17em}
+    .tagline{font-size:10px;letter-spacing:.38em;color:#8e747d;margin:0}
+    nav{position:sticky;top:0;z-index:5;display:flex;justify-content:center;gap:clamp(16px,5vw,42px);padding:15px 10px;background:rgba(255,255,255,.96);border-bottom:1px solid var(--line);backdrop-filter:blur(8px)}
+    nav a{text-decoration:none;color:var(--rose-dark);font-size:12px;letter-spacing:.07em;white-space:nowrap}
+    nav a:hover{color:#543c45}
+    .hero{min-height:590px;display:flex;align-items:center;justify-content:center;text-align:center;padding:70px 22px 76px;position:relative;overflow:hidden;background:radial-gradient(ellipse at 85% 18%,rgba(230,190,202,.48),transparent 34%),radial-gradient(ellipse at 10% 88%,rgba(242,221,225,.8),transparent 42%),linear-gradient(125deg,#fff9f6,#f5e5e9 68%,#f8edf0)}
+    .hero:before,.hero:after{content:"";position:absolute;border:1px solid rgba(152,103,119,.22);border-radius:50%;pointer-events:none}
+    .hero:before{width:340px;height:340px;right:-205px;top:35px}
+    .hero:after{width:260px;height:260px;left:-175px;bottom:20px}
+    .hero-inner{max-width:660px;position:relative;z-index:1}
+    .eyebrow{font-size:10px;letter-spacing:.34em;color:var(--rose);margin:0 0 23px}
+    h1{font:normal clamp(39px,8vw,64px)/1.08 Georgia,'Times New Roman',serif;letter-spacing:-.025em;margin:0 auto 22px;max-width:650px;color:#382a30}
+    .intro{font-size:15px;line-height:1.9;color:#78656d;max-width:490px;margin:0 auto 30px}
+    .button{display:inline-flex;align-items:center;justify-content:center;min-height:49px;padding:0 29px;background:var(--rose);border:1px solid var(--rose);border-radius:3px;color:white;text-decoration:none;font-size:11px;letter-spacing:.16em;transition:.2s}
+    .button:hover{background:var(--rose-dark);border-color:var(--rose-dark)}
+    .secondary{background:transparent;color:var(--rose-dark)}
+    .secondary:hover{background:#f3e5e8;color:var(--rose-dark)}
+    .collection{min-height:440px;padding:75px 20px 85px;background:linear-gradient(180deg,#fffaf7,#fbf1f2);text-align:center;display:flex;align-items:center;justify-content:center}
+    .collection-inner{max-width:610px;margin:auto}
+    .collection-kicker{font-size:10px;letter-spacing:.32em;color:var(--rose);margin:0 0 18px}
+    .collection h2{font:normal clamp(34px,7vw,48px)/1.15 Georgia,'Times New Roman',serif;margin:0 0 18px;color:#46343b}
+    .collection p{font-size:14px;line-height:1.85;color:var(--muted);margin:0 auto 25px;max-width:450px}
+    .ornament{width:54px;height:1px;background:#c9a5b0;margin:0 auto 25px;position:relative}
+    .ornament:after{content:"✧";position:absolute;left:50%;top:50%;transform:translate(-50%,-55%);background:#fbf1f2;padding:0 9px;color:var(--rose);font-size:14px}
+    .info{padding:54px 20px;background:#fff;text-align:center;border-top:1px solid var(--line)}
+    .info h2{font:normal 29px Georgia,'Times New Roman',serif;margin:0 0 13px}
+    .info p{font-size:13px;line-height:1.9;color:var(--muted);max-width:480px;margin:0 auto}
+    footer{text-align:center;padding:27px 15px 31px;background:#f3e5e9;color:#806b74;font-size:11px;line-height:2;letter-spacing:.03em}
+    [hidden]{display:none!important}
+    @media(min-width:700px){.hero{min-height:650px}.intro{font-size:16px}.collection{min-height:500px}}
+    @media(max-width:370px){nav{gap:12px}nav a{font-size:10px}.hero{min-height:540px}}
+  </style>
+</head>
+<body>
+  <header class="site-header" id="beranda">
+    <p class="brand">VYZKIE</p>
+    <p class="tagline">HIJAB YOUR STYLE</p>
+  </header>
+  <nav aria-label="Navigasi utama">
+    <a href="#beranda" data-home>BERANDA</a>
+    <a href="#koleksi" data-show="koleksi">KOLEKSI</a>
+    <a href="#info" data-show="info">INFO PEMESANAN</a>
+  </nav>
+  <section class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow">ELEGANT&nbsp; · &nbsp;MODEST&nbsp; · &nbsp;EVERYDAY</p>
+      <h1>Temukan gaya hijab yang mencerminkan dirimu</h1>
+      <p class="intro">Selamat datang di VYZKIE. Ruang untuk gaya hijab yang anggun, nyaman, dan menemani setiap momen istimewamu.</p>
+      <a class="button" href="#koleksi" data-show="koleksi">LIHAT KOLEKSI</a>
+    </div>
+  </section>
+  <main>
+    <section class="collection" id="koleksi" hidden>
+      <div class="collection-inner">
+        <p class="collection-kicker">A LITTLE SOMETHING IS COMING</p>
+        <div class="ornament"></div>
+        <h2>Our Collection</h2>
+        <p>Koleksi VYZKIE sedang kami persiapkan dengan sepenuh hati. Nantikan pilihan hijab yang akan segera hadir untuk melengkapi gayamu.</p>
+        <p style="font-family:Georgia,serif;font-style:italic;color:#986777;letter-spacing:.08em;margin-bottom:28px">Coming Soon</p>
+        <a class="button secondary" href="#beranda" data-home>KEMBALI KE BERANDA</a>
+      </div>
+    </section>
+    <section class="info" id="info" hidden>
+      <h2>Informasi Pemesanan</h2>
+      <p>Informasi koleksi dan pemesanan VYZKIE akan diumumkan segera. Terima kasih sudah menantikan kehadiran kami.</p>
+      <p style="margin-top:20px"><a class="button secondary" href="#beranda" data-home>KEMBALI KE BERANDA</a></p>
+    </section>
+  </main>
+  <footer>VYZKIE — Hijab Your Style<br>Elegant · Modest · Everyday<br>Terima kasih telah berkunjung.</footer>
+  <script>
+    const collection = document.getElementById('koleksi');
+    const info = document.getElementById('info');
+    function showSection(id){
+      collection.hidden = id !== 'koleksi';
+      info.hidden = id !== 'info';
+      const target = document.getElementById(id);
+      if(target) setTimeout(()=>target.scrollIntoView({behavior:'smooth',block:'start'}),20);
+    }
+    document.querySelectorAll('[data-show]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();showSection(link.dataset.show)}));
+    document.querySelectorAll('[data-home]').forEach(link=>link.addEventListener('click',event=>{event.preventDefault();collection.hidden=true;info.hidden=true;window.scrollTo({top:0,behavior:'smooth'})}));
+  </script>
+</body>
+</html>
