@@ -398,31 +398,42 @@ a{color:inherit;text-decoration:none}
   width: 25px !important;
 }
 /* SATU GARIS LENGKUNG ELEGAN */
-/* GARIS GELOMBANG ELEGAN VYZKIE */
+/* GELOMBANG HERO VYZKIE */
+.hero {
+  position: relative !important;
+  overflow: hidden !important;
+}
+
 .hero::before,
 .hero::after {
-  content: "";
-  position: absolute;
-  display: block;
-  width: 180%;
-  height: 820px;
-  left: -40%;
-  top: -380px;
+  content: "" !important;
+  display: block !important;
+  position: absolute !important;
+  width: 150% !important;
+  height: 560px !important;
+  left: -25% !important;
   border: none !important;
-  border-bottom: 2px solid #c58d7c;
-  border-radius: 50%;
-  pointer-events: none;
+  border-bottom: 2px solid #c58d7c !important;
+  border-radius: 0 0 50% 50% !important;
+  pointer-events: none !important;
+  transform: none !important;
+  z-index: 0 !important;
 }
 
 .hero::before {
-  transform: rotate(-7deg);
+  top: -120px !important;
 }
 
 .hero::after {
-  top: -350px;
-  transform: rotate(7deg);
-  border-bottom-color: #e6bdb3;
-  opacity: 0.8;
+  top: -180px !important;
+  height: 600px !important;
+  border-bottom-color: #e6bdb3 !important;
+  opacity: 0.8 !important;
+}
+
+.hero-inner {
+  position: relative !important;
+  z-index: 2 !important;
 }
 </style>
 </head>
