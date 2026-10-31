@@ -264,6 +264,54 @@ a{color:inherit;text-decoration:none}
   }
 }
 
+/* VYZKIE ROSE GOLD METALLIC */
+
+.hero h1 {
+  background: linear-gradient(
+    110deg,
+    #874b48 0%,
+    #bd7770 22%,
+    #f2c1b3 42%,
+    #a85e59 62%,
+    #e6aaa0 82%,
+    #874b48 100%
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  text-shadow: none;
+}
+
+/* GARIS LURUS PEMBATAS HEARTLINE */
+
+.hero .heartline {
+  font-size: 0;
+  letter-spacing: 0;
+  width: min(420px, 80%);
+  height: 26px;
+  margin: 12px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    to bottom,
+    transparent 48%,
+    #bd8278 48%,
+    #bd8278 52%,
+    transparent 52%
+  );
+}
+
+.hero .heartline::before {
+  content: "♡";
+  font-size: 23px;
+  color: #a85e59;
+  padding: 0 12px;
+  background: #f9eae7;
+  text-shadow: 0 0 5px #f9eae7;
+}
+
 </style>
 </head>
 <body>
