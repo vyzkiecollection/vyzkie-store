@@ -392,33 +392,35 @@ a{color:inherit;text-decoration:none}
     letter-spacing: 6px;
     gap: 10px;
   }
-
-  .hero .collection::before,
-  .hero .collection::after {
-    width: 25px !important;
-  }
+/* GARIS COLLECTION PENDEK */
+.hero .collection::before,
+.hero .collection::after {
+  width: 25px !important;
 }
-/* GARIS GELOMBANG VYZKIE */
+
+/* GELOMBANG BAWAH */
 .hero::before,
 .hero::after {
-  width: 135% !important;
-  height: 340px !important;
-  border: 2px solid transparent !important;
-  border-top-color: #c58d7c !important;
+  content: "";
+  position: absolute;
+  width: 160% !important;
+  height: 180px !important;
+  border: 0 !important;
+  border-top: 2px solid #c58d7c !important;
   border-radius: 50% !important;
-  top: 65% !important;
+  top: 72% !important;
 }
 
 .hero::before {
-  left: -18% !important;
+  left: -30% !important;
   right: auto !important;
-  transform: rotate(9deg) !important;
+  transform: rotate(6deg) !important;
 }
 
 .hero::after {
-  right: -18% !important;
+  right: -30% !important;
   left: auto !important;
-  transform: rotate(-9deg) !important;
+  transform: rotate(-6deg) !important;
 }
 </style>
 </head>
