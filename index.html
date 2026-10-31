@@ -398,7 +398,28 @@ a{color:inherit;text-decoration:none}
     width: 25px !important;
   }
 }
+/* GARIS GELOMBANG VYZKIE */
+.hero::before,
+.hero::after {
+  width: 135% !important;
+  height: 340px !important;
+  border: 2px solid transparent !important;
+  border-top-color: #c58d7c !important;
+  border-radius: 50% !important;
+  top: 65% !important;
+}
 
+.hero::before {
+  left: -18% !important;
+  right: auto !important;
+  transform: rotate(9deg) !important;
+}
+
+.hero::after {
+  right: -18% !important;
+  left: auto !important;
+  transform: rotate(-9deg) !important;
+}
 </style>
 </head>
 <body>
