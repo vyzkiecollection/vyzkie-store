@@ -329,6 +329,34 @@ a{color:inherit;text-decoration:none}
   background: #a66b63;
 }
 
+/* GARIS HATI VYZKIE - FINAL */
+.hero .heartline {
+  width: min(460px, 80%);
+  height: 26px;
+  margin: 12px auto;
+  position: relative;
+  background: linear-gradient(
+    to right,
+    #bd8278 0 43%,
+    transparent 43% 57%,
+    #bd8278 57% 100%
+  ) center / 100% 1px no-repeat !important;
+}
+
+.hero .heartline::before {
+  content: "♡";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  background: transparent !important;
+  color: #a85e59;
+  font-size: 22px;
+  line-height: 1;
+  text-shadow: none;
+}
+
 </style>
 </head>
 <body>
