@@ -130,6 +130,90 @@ a{color:inherit;text-decoration:none}
  .navlinks{gap:13px}
  .hero{min-height:320px}
 }
+ 
+/* === VYZKIE MOBILE POLISH === */
+
+@media (max-width: 600px) {
+  /* Header lebih ringkas */
+  .topbar {
+    padding: 8px 12px;
+    font-size: 10px;
+  }
+
+  .navbar {
+    padding: 12px;
+    gap: 12px;
+  }
+
+  .navlinks {
+    gap: 12px;
+    font-size: 11px;
+    flex-wrap: wrap;
+  }
+
+  /* Banner lebih proporsional */
+  .hero {
+    min-height: 280px;
+    padding: 45px 15px;
+    overflow: hidden;
+  }
+
+  .hero::before {
+    width: 150%;
+    height: 190px;
+    left: -25%;
+    top: auto;
+    bottom: -115px;
+    border-radius: 50%;
+    transform: rotate(-8deg);
+    pointer-events: none;
+  }
+
+  .hero::after {
+    width: 145%;
+    height: 180px;
+    left: -20%;
+    top: auto;
+    bottom: -135px;
+    border-radius: 50%;
+    transform: rotate(8deg);
+    pointer-events: none;
+  }
+
+  /* Benefit lebih rapi */
+  .benefits {
+    gap: 12px 6px;
+    padding: 15px 10px;
+  }
+
+  .benefit {
+    padding: 12px 5px;
+  }
+
+  /* Keranjang tidak menutupi konten */
+  .floating-cart {
+    right: 12px;
+    bottom: 15px;
+    padding: 9px 13px;
+    font-size: 12px;
+    border-radius: 30px;
+    z-index: 20;
+  }
+
+  /* Produk lebih nyaman dilihat */
+  .products {
+    gap: 12px;
+  }
+
+  .product-image {
+    height: 175px;
+  }
+
+  .product-info {
+    padding: 9px;
+  }
+}
+
 </style>
 </head>
 <body>
