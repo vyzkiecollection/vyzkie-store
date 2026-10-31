@@ -397,30 +397,23 @@ a{color:inherit;text-decoration:none}
 .hero .collection::after {
   width: 25px !important;
 }
-
-/* GELOMBANG BAWAH */
-.hero::before,
-.hero::after {
+/* SATU GARIS LENGKUNG ELEGAN */
+.hero::before {
   content: "";
   position: absolute;
+  display: block !important;
   width: 160% !important;
-  height: 180px !important;
+  height: 260px !important;
+  left: -30% !important;
+  top: 83% !important;
   border: 0 !important;
   border-top: 2px solid #c58d7c !important;
   border-radius: 50% !important;
-  top: 72% !important;
-}
-
-.hero::before {
-  left: -30% !important;
-  right: auto !important;
-  transform: rotate(6deg) !important;
+  transform: rotate(-5deg) !important;
 }
 
 .hero::after {
-  right: -30% !important;
-  left: auto !important;
-  transform: rotate(-6deg) !important;
+  display: none !important;
 }
 </style>
 </head>
